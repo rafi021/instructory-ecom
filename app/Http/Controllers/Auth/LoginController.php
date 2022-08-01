@@ -25,7 +25,7 @@ class LoginController extends Controller
             'password' => $request->password,
         ];
 
-        // login attempt if success then redirect home
+        // login attempt if success then redirect dashboard
         if(Auth::attempt($credentials, $request->filled('remember'))){
             $request->session()->regenerate();
             return redirect()->intended('admin/dashboard');
