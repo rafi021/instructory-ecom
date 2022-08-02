@@ -1,6 +1,8 @@
 <?php
 
 use App\Http\Controllers\Auth\LoginController;
+use App\Http\Controllers\Backend\CategoryController;
+use App\Http\Controllers\Backend\DashboardController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -30,10 +32,11 @@ Route::prefix('admin/')->group(function(){
     Route::get('logout', [LoginController::class, 'logout'])->name('admin.logout');
 
     Route::middleware(['auth'])->group(function(){
-        Route::get('dashboard', function () {
-            return view('backend.pages.Dashboard');
-        })->name('admin.dashboard');
+        Route::get('dashboard', [DashboardController::class, 'dashboard'])->name('admin.dashboard');
     });
+
+    /*Resource Controller*/
+    Route::resource('category', CategoryController::class);
 });
 
 /*Admin Auth routes */
