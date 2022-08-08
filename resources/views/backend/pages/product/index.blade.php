@@ -42,8 +42,8 @@
                 <tbody>
                     @foreach ($products as $product)
                         <tr>
-                            <th scope="row">{{ $products->firstItem()+$loop->index }}</th>
-                            <td><img src="{{ asset('uploads/product_photos') }}/{{ $product->product_image }}" alt="" class="img-fluid rounded h-20 w-20"></td>
+                            <td scope="row">{{ $products->firstItem()+$loop->index }}</th>
+                            <td><img src="{{ asset('uploads/product_photos') }}/{{ $product->product_image }}" alt="" class="img-fluid rounded w-25 h-25"></td>
                             <td>{{ $product->updated_at->format('d M Y') }}</td>
                             <td>{{ $product->category->title }}</td>
                             <td>{{ $product->name }}</td>
