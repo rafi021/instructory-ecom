@@ -82,9 +82,9 @@ class CartController extends Controller
                // check coupon discount type
                 Session::put('coupon', [
                     'name' => $check->coupon_name,
-                    'discount_amount' => round((Cart::subtotal() * $check->discount_amount)/100),
-                    'cart_total' => Cart::subtotal(),
-                    'balance' => round(Cart::subtotal() - (Cart::subtotal() * $check->discount_amount)/100)
+                    'discount_amount' => round((Cart::subtotalFloat() * $check->discount_amount)/100),
+                    'cart_total' => Cart::subtotalFloat(),
+                    'balance' => round(Cart::subtotalFloat() - (Cart::subtotalFloat() * $check->discount_amount)/100)
                 ]);
                 Toastr::success('Coupon Percentage Applied!!', 'Successfully!!');
                 return redirect()->back();

@@ -49,7 +49,7 @@
                                 <div class="col-sm-6 col-12 mb-3">
                                     <p>District *</p>
                                     <select id="district_id" name="district_id" class="form-select js-example-basic-single">
-                                        <option value="1">Select a district</option>
+                                        <option value="0">Select a district</option>
                                         @foreach ($districts as $district)
                                         <option value="{{ $district->id }}">{{ $district->name }}</option>
                                         @endforeach
