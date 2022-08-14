@@ -7,9 +7,8 @@
                     <div class="col-lg-12 col-12">
                         <div class="footer-top-text text-center">
                             <ul>
-                                <li><a href="home.html">home</a></li>
-                                <li><a href="#">our story</a></li>
-                                <li><a href="#">feed shop</a></li>
+                                <li><a href="{{ route('home') }}">home</a></li>
+                                <li><a href="{{ route('shop.page') }}">shop</a></li>
                                 <li><a href="blog.html">how to eat blog</a></li>
                                 <li><a href="contact.html">contact</a></li>
                             </ul>
@@ -25,7 +24,7 @@
                 <div class="col-lg-2 col-md-3 col-sm-12">
                     <div class="footer-icon">
                         <ul class="d-flex">
-                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="www.facebook.com"><i class="fa fa-facebook"></i></a></li>
                             <li><a href="#"><i class="fa fa-twitter"></i></a></li>
                             <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
                             <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
@@ -49,7 +48,7 @@
                 <div class="col-lg-3 col-md-4 col-sm-12">
                     <div class="footer-reserved">
                         <ul>
-                            <li>Copyright © 2019 Tohoney All rights reserved.</li>
+                            <li>Copyright © 2022 Tohoney All rights reserved.</li>
                         </ul>
                     </div>
                 </div>

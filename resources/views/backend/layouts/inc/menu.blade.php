@@ -50,15 +50,15 @@
             </a>
             <ul id="orders">
                 <li>
-                    <a href="Orders.List.html">
+                    <a href="{{ route('admin.orderlist') }}">
                         <span class="label">List</span>
                     </a>
                 </li>
-                <li>
+                {{-- <li>
                     <a href="Orders.Detail.html">
                         <span class="label">Detail</span>
                     </a>
-                </li>
+                </li> --}}
             </ul>
         </li>
         <li>
@@ -68,15 +68,15 @@
             </a>
             <ul id="customers">
                 <li>
-                    <a href="Customers.List.html">
+                    <a href="{{ route('admin.customerlist') }}">
                         <span class="label">List</span>
                     </a>
                 </li>
-                <li>
+                {{-- <li>
                     <a href="Customers.Detail.html">
                         <span class="label">Detail</span>
                     </a>
-                </li>
+                </li> --}}
             </ul>
         </li>
         <li>
